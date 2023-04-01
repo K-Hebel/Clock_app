@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock App</title>
-    <link rel="stylesheet" href="Clock_app\static\styles.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Analog Clock</title>
 </head>
 <body>
     <div class="clock">
         <div class="hand hour-hand"></div>
         <div class="hand minute-hand"></div>
         <div class="hand second-hand"></div>
+        <div class="center-circle"></div>
     </div>
-    <script src="Clock_app\static\script.js"></script>
+    <div class="input-container">
+        <label for="hour-input">Hour:</label>
+        <input type="number" id="hour-input" min="0" max="23" step="1">
+        <label for="minute-input">Minute:</label>
+        <input type="number" id="minute-input" min="0" max="59" step="1">
+        <label for="second-input">Second:</label>
+        <input type="number" id="second-input" min="0" max="59" step="1">
+        <button id="set-time">Set Time</button>
+    </div>
+    <script src="static/script.js"></script>
 </body>
 </html>
-
