@@ -37,4 +37,79 @@ h2 {
 .clock {
     width: 300px;
     height: 300px;
-    border: 5px
+    border: 5px solid #8338ec;
+    border-radius: 50%;
+    position: relative;
+    background-color: #3a86ff;
+}
+
+.hand {
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.hour-hand {
+    background-color: #1d3557;
+    height: 6px;
+    border-radius: 6px 0 0 6px;
+}
+
+.minute-hand {
+    background-color: #457b9d;
+    height: 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+.second-hand {
+    background-color: #e63946;
+    height: 2px;
+    border-radius: 2px 0 0 2px;
+}
+
+.center-circle {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+input {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8338ec;
+}
+
+.hint {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #2b2d42;
+}
