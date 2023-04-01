@@ -17,4 +17,6 @@ function setClock() {
     hourHand.style.transform = `rotate(${hoursRotation}deg)`;
 }
 
-setInterval(setClock, 1000);
+document.addEventListener('DOMContentLoaded', function () {
+    setInterval(setClock, 1000);
+});
