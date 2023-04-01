@@ -44,11 +44,10 @@ h2 {
 }
 
 .hand {
-    background-color: black;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: 100% 50%;
+    transform-origin: right center;
 }
 
 .hour-hand {
@@ -76,6 +75,63 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+.numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    transform: rotate(calc(30deg * var(--n)));
+}
+
+.number::before {
+    content: attr(style);
+    display: block;
+    transform: rotate(calc(-30deg * var(--n)));
+}
+
+.minute-ticks {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.minute-tick {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transform: rotate(calc(6deg * var(--n)));
+}
+
+.minute-tick::before {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    transform: rotate(calc(-6deg * var(--n)));
+}
+
 .input-container {
     display: flex;
     justify-content: space-between;
@@ -89,20 +145,4 @@ input {
 
 button {
     background-color: #3a86ff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #8338ec;
-}
-
-.hint {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #2b2d42;
-}
+    color: white
