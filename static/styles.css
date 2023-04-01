@@ -54,19 +54,15 @@ h2 {
 .hour-hand {
     background-color: #1d3557;
     height: 6px;
+    width: 50%;
     border-radius: 6px 0 0 6px;
 }
 
 .minute-hand {
     background-color: #457b9d;
     height: 4px;
+    width: 50%;
     border-radius: 4px 0 0 4px;
-}
-
-.second-hand {
-    background-color: #e63946;
-    height: 2px;
-    border-radius: 2px 0 0 2px;
 }
 
 .center-circle {
