@@ -7,6 +7,17 @@ A fullstack application includes frontend code that has an interactive UI design
 track user interaction with the website.   The input will be in the form, “create an app that teaches students to tell time on an 
 analog clock”. The output will be the backend python code and the frontend code.
 
+#### File Structure
+```analog_clock_app/
+    ├── app.py
+    ├── templates/
+    │   └── index.html
+    ├── static/
+    │   ├── styles.css
+    │   └── script.js
+    └── venv/ (if using a virtual environment)
+```
+
 Results:
 1. Install Flask: `pip install Flask`
 1. `app.py`
