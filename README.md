@@ -8,7 +8,7 @@ track user interaction with the website.   The input will be in the form, “cre
 analog clock”. The output will be the backend python code and the frontend code.
 
 #### File Structure
-analog_clock_app/
+```analog_clock_app/
     ├── app.py
     ├── templates/
     │   └── index.html
@@ -16,7 +16,7 @@ analog_clock_app/
     │   ├── styles.css
     │   └── script.js
     └── venv/ (if using a virtual environment)
-
+```
 
 Results:
 1. Install Flask: `pip install Flask`
